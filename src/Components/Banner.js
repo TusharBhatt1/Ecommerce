@@ -14,7 +14,7 @@ export default function Banner() {
 
   return (
   
-    <Autoplay cancelOnInteraction={true} play={true}  style={{zIndex:1,height:"80vh"}}>
+    <Autoplay cancelOnInteraction={false} play={true}  style={{zIndex:1,height:"80vh"}}>
     <img height={"10px"} data-src={one}></img>
     <img height={"20px"} data-src={two}></img>
     <img height={"20px"} data-src={three}></img>
