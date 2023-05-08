@@ -17,7 +17,7 @@ export default function Navbar() {
     </Link>
   
     <div className='anchor'>
-    <a>Home</a>
+    <a>Homee</a>
     <a>About</a>
     <a>Contact</a>
     </div>
