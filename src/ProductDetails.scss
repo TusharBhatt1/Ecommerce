@@ -1,0 +1,17 @@
+.details{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Addedmsg{
+    color: green;
+    font-family: cursive;
+    animation: fadeout 1s ease;
+    font-size:medium;
+}
+@keyframes fadeout {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

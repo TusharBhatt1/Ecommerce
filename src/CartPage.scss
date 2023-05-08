@@ -1,0 +1,45 @@
+.maincontainer{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.allcartitems{
+   display: flex;
+   justify-content: center;
+   gap:40px;
+   
+  .col1{
+    display: flex;
+    width: 30vw;
+    gap:5vw
+  }
+   .col2{
+  
+    display: flex;
+   font-family: cursive;
+    height: 50px;
+   
+  
+   }
+   .removebtn{
+    background-color: transparent;
+    align-self: center;
+    border: none;
+   }
+}
+
+.backbtn{
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+.totalprice{
+    text-align: center;
+    margin-top: 10px;
+    border-top: 1px solid black;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

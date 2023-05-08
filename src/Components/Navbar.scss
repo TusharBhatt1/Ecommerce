@@ -1,0 +1,56 @@
+.navbar{
+   position:fixed;
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+   align-items: center;
+   background-color: white;
+   z-index: 2;
+
+   
+  
+   
+
+    .logo{
+        color: red;
+        height: 50px;
+       
+        width: 50px;
+        display: flex;
+        align-items: start;
+         }
+      .anchor{
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+         
+      }   
+      a{
+         text-decoration: none;
+         font-family:Georgia, 'Times New Roman', Times, serif;
+         font-weight: bold;
+         color: black;
+      }
+     .cart
+     {
+      color: blue;
+       display: flex;
+       align-items:center;
+       text-align:right;
+       gap:10px;
+       >p{
+       text-align:right;
+       }
+        
+     }
+
+}
+
+@media (max-width:400px) {
+   .anchor{
+         display: none;
+      }
+      .navbar{
+      justify-content: space-around;
+   }
+}
