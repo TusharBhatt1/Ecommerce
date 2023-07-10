@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Face6Icon from '@mui/icons-material/Face6';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import "./Navbar.scss"
 import {Link} from "react-router-dom"
+import { Cartcontext } from '../Context/Context';
 
 export default function Navbar() {
 
+let cart= useContext(Cartcontext)
 
   return (
    
@@ -16,20 +18,20 @@ export default function Navbar() {
     <Face6Icon  className='logo'/> 
     </Link>
   
-    <div className='anchor'>
-    <a>Homes</a>
-    <a>About</a>
-    <a>Contact</a>
-    </div>
+   
+    <p className='s-remove'>Home</p>
+    <p className='s-remove'>Contact</p>
+   
     
     <Link to="/cart" className='cart'>
-    <p>Cart</p>
+    <p className='cart'>Cart</p>
     <ShoppingCartIcon className="carticon"/>
-    
+    {cart.state.length!==0 && <p>({cart.state.length})</p>}
     </Link>
     
-    <InsertEmoticonIcon/>
-    </div>
+  
+   
+   </div>
    
   )
 }

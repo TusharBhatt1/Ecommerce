@@ -3,6 +3,7 @@ import "./CartPage.scss"
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import { Cartcontext } from './Context/Context'
 import { Link } from 'react-router-dom';
+import Navbar from './Components/Navbar';
 
 
 
@@ -33,10 +34,10 @@ export default function CartPage() {
   
   return (
    <itemslengthcontext.Provider value={itemslength}>
-  
+   <Navbar/>
     <div className='maincontainer'>
     
-    <Link to="/"><button className='backbtn'>Back</button></Link>
+    <Link to="/"><button style={{marginTop:"60px"}} className='backbtn'>Back</button></Link>
     
       { state.length===0 ?<h3>Your Cart Is Empty</h3>: state.map((item)=>
           

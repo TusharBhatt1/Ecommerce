@@ -38,7 +38,7 @@ export default function Categories() {
 
   return (
     <>
-      <div className='categoriesbuttons'>
+      <div style={{marginTop:"30px"}} className='categoriesbuttons'>
         <button onClick={handleAllCategory}>ALL</button>
         <button onClick={handleMenCategory}>Men's</button>
         <button onClick={handleWomenCategory}>Women's</button>
